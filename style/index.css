@@ -26,12 +26,16 @@ time, mark, audio, video {
     max-width: 100%;
 }
 
+html{
+    font-size: 62.5%;
+}
+
 header{
     /*display:flex;
     flex-direction:column;
     align-items:center;
     background-color:grey;*/
-    background-image:url("https://images.unsplash.com/photo-1586317683459-637adaa26ab8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80");
+    background-image:url("https://images.unsplash.com/photo-1497091071254-cc9b2ba7c48a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80");
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
@@ -41,38 +45,39 @@ header{
 h1{
     display:flex;
     justify-content:center;
-    font-family: 'Arial Black', sans-serif;
-    letter-spacing: 3px;
-    padding: 2% 0;
+    font-family: 'Trebuchet MS', sans-serif;
     text-align: center;
+    color: white;
     width:100%;
-    font-size: 40px;
-    background-color:lightblue;
+    font-size: 1.5rem;
+    background-color:grey;
 
 }
 
-.nav1{
+.links{
     display:flex;
-    justify-content:center;
-    align-items:center;
-    background-color:lightblue;
+    justify-content:space-around;
+    background-color:grey;
 }
 
-.nav1 a{
-    width:7%;
-    font-family: 'Impact', sans-serif;
-    float:left;
-    color:black;
-    text-align:center;
-    padding:14px 16px;
+.links a{
+    border: .2rem solid white;
+    font-size:2rem;
+    margin-top: 2%;
+    margin-bottom:2%;
+    padding:1% 2%;
     text-decoration: none;
-    font-size: 20px;
-    background-color:lightgrey; 
+    font-family: 'Trebuchet MS', sans-serif;
+    color: white;
+    line-height: 3rem;
+    border-radius: 1rem;
 }
 
-.nav1 a:hover{
-    background-color:lightgreen;
-    color:white;
+
+
+.links a:hover{
+    border: .2rem inset white;
+    background-color:lightgrey;
 }
 
 .about-me{
@@ -82,55 +87,57 @@ h1{
 }
 
 .about-me p{
+    margin-top: 5%;
     text-align:center;
     padding: 2%;
-    font-family: 'Arial Black', sans-serif;
-    background-color:lightblue;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 1.4rem;
     width:100%;
 }
 
 .background-container{
     height:40vh;
+}
+
+.projects-below{
     display:flex;
     justify-content:center;
-    align-items:center;
 }
 
 .projects-below a{
-    color: black;
-    background-color:lightgrey;
-    font-family: 'impact', sans-serif;
-    font-size: 30px;
-    text-align: center;
-    padding:10%;
+    border: .2rem solid white;
+    margin-top: 10rem;
+    text-decoration: none;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    padding:1.5%;
+    border-radius: 1rem;
 }
 
 .projects-below a:hover{
-    background-color:lightgreen;
+    border: .2rem inset white;
+    background-color:lightgrey;
     color:white;
 }
 
-#project-images{
-    width:40%;
+.four-images{
     display:flex;
+    justify-content: center;
+    background-color:grey;
+    padding:3%;
 }
 
-#project-images img, p{
-    display:flex;
-    justify-content:center;
-    align-items:stretch;
-    width:50%;
-    padding-left:10%;
-    padding-right: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+.four-images img{
+    border: .1rem solid white;
+    width:20%;
+    margin:3%;
+    border-radius: 1rem;
 }
 
-#project-images p{
-    background-color: lightblue;
-    font-family: 'Impact', sans-serif;
-    width: 10%;
-
+.four-images img:hover{
+    border: 2rem double white;
 }
 
 footer{
@@ -144,26 +151,25 @@ footer{
 }
 .nav2{
     display:flex;
-    justify-content:center;
+    justify-content:space-around;
     align-items:center;
-    background-color:lightblue;
-    padding:5%;
+    background-color:grey;
 }
 
 .nav2 a{
+    border: .1rem solid white;
     width:7%;
-    font-family: 'Impact', sans-serif;
-    float:left;
-    color:black;
+    font-family: 'Trebuchet MS', sans-serif;
+    color:white;
     text-align:center;
-    padding:14px 16px;
+    padding:1rem;
     text-decoration: none;
-    font-size: 20px;
-    background-color:lightgrey;
+    font-size: 2rem;
+    background-color:grey;
 }
 
 .nav2 a:hover{
-    background-color:lightgreen;
+    background-color:lightgrey;
     color:white;
 }
 
@@ -171,9 +177,32 @@ footer{
     display:flex;
     justify-content:center;
     align-items:center;
-    background-color:lightblue;
+    background-color:grey;
 }
 
 .nav3 a{
     padding:1%;
+}
+
+.nav3 a:hover{
+    background-color:lightgrey;
+
+}
+
+@media(max-width:800px){
+    .nav1{
+      flex-direction: column;  
+    }
+
+    .project-images{
+        flex-direction:column;
+    }
+    .project-images img, p{
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width:500px){
+
 }
