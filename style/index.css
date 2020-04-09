@@ -21,21 +21,159 @@ time, mark, audio, video {
 }
 
 *{
-    border: 1px solid grey;
+    /*border: 1px solid black;*/
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
-.buttons{
-    color:white;
-    /*display: flex;
-    justify-content:space-between;*/
-
-}
-
-header nav{
-    width:100%;
-    background-color: skyblue;
-    display: flex;
-    justify-content: space-between;
+header{
+    /*display:flex;
+    flex-direction:column;
     align-items:center;
+    background-color:grey;*/
+    background-image:url("https://images.unsplash.com/photo-1586317683459-637adaa26ab8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
 
+h1{
+    display:flex;
+    justify-content:center;
+    font-family: 'Arial Black', sans-serif;
+    letter-spacing: 3px;
+    padding: 2% 0;
+    text-align: center;
+    width:100%;
+    font-size: 40px;
+    background-color:lightblue;
+
+}
+
+.nav1{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:lightblue;
+}
+
+.nav1 a{
+    width:7%;
+    font-family: 'Impact', sans-serif;
+    float:left;
+    color:black;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color:lightgrey; 
+}
+
+.nav1 a:hover{
+    background-color:lightgreen;
+    color:white;
+}
+
+.about-me{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.about-me p{
+    text-align:center;
+    padding: 2%;
+    font-family: 'Arial Black', sans-serif;
+    background-color:lightblue;
+    width:100%;
+}
+
+.background-container{
+    height:40vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.projects-below a{
+    color: black;
+    background-color:lightgrey;
+    font-family: 'impact', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding:10%;
+}
+
+.projects-below a:hover{
+    background-color:lightgreen;
+    color:white;
+}
+
+#project-images{
+    width:40%;
+    display:flex;
+}
+
+#project-images img, p{
+    display:flex;
+    justify-content:center;
+    align-items:stretch;
+    width:50%;
+    padding-left:10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#project-images p{
+    background-color: lightblue;
+    font-family: 'Impact', sans-serif;
+    width: 10%;
+
+}
+
+footer{
+    /*display:flex;
+    justify-content:center;
+    font-family: "Impact", sans-serif;
+    font-size:40px;
+    background-color:teal;
+    padding:5%;*/
+
+}
+.nav2{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:lightblue;
+    padding:5%;
+}
+
+.nav2 a{
+    width:7%;
+    font-family: 'Impact', sans-serif;
+    float:left;
+    color:black;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color:lightgrey;
+}
+
+.nav2 a:hover{
+    background-color:lightgreen;
+    color:white;
+}
+
+.nav3{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:lightblue;
+}
+
+.nav3 a{
+    padding:1%;
 }
