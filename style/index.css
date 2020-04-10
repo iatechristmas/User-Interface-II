@@ -54,6 +54,8 @@ h1{
 
 }
 
+/**formatting for nav bar**/
+
 .links{
     display:flex;
     justify-content:space-around;
@@ -80,6 +82,8 @@ h1{
     background-color:lightgrey;
 }
 
+/** formatting for the "about me" section**/
+
 .about-me{
     display:flex;
     align-items:center;
@@ -94,11 +98,14 @@ h1{
     color: white;
     font-size: 1.4rem;
     width:100%;
+
 }
 
 .background-container{
     height:40vh;
 }
+
+/** formatting for "view my procects" button**/
 
 .projects-below{
     display:flex;
@@ -122,9 +129,11 @@ h1{
     color:white;
 }
 
+/** formatting for project images**/
+
 .four-images{
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
     background-color:grey;
     padding:3%;
 }
@@ -132,12 +141,28 @@ h1{
 .four-images img{
     border: .1rem solid white;
     width:20%;
-    margin:3%;
     border-radius: 1rem;
+    margin:.5%;
 }
 
 .four-images img:hover{
-    border: 2rem double white;
+    border: .5rem double white;
+}
+
+
+/** formatting for paragraph next to images**/
+
+.four-images div p{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    letter-spacing: .3rem;
+    text-align:right;
+    margin:10%;
+    border: .1rem solid white;
+    padding:10%;
+    background-color:darkgrey;
+
 }
 
 footer{
@@ -149,29 +174,36 @@ footer{
     padding:5%;*/
 
 }
+
+
 .nav2{
     display:flex;
     justify-content:space-around;
     align-items:center;
-    background-color:grey;
+    background-color:darkgrey;
 }
 
+/** formatting for contact me button**/
+
 .nav2 a{
-    border: .1rem solid white;
-    width:7%;
-    font-family: 'Trebuchet MS', sans-serif;
-    color:white;
-    text-align:center;
-    padding:1rem;
+    border: .2rem solid white;
+    font-size:2rem;
+    margin-top: 2%;
+    margin-bottom:2%;
+    padding:1% 2%;
     text-decoration: none;
-    font-size: 2rem;
-    background-color:grey;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: white;
+    line-height: 3rem;
+    border-radius: 1rem;
 }
 
 .nav2 a:hover{
     background-color:lightgrey;
     color:white;
 }
+
+/** formatting for social media links**/
 
 .nav3{
     display:flex;
@@ -189,20 +221,34 @@ footer{
 
 }
 
+/**media formatting**/
+
 @media(max-width:800px){
-    .nav1{
+    .links{
       flex-direction: column;  
+      align-items:center;
     }
 
-    .project-images{
-        flex-direction:column;
+    .links a{
+        text-align:center;
+        width:20%;
     }
-    .project-images img, p{
-        flex-direction: column;
+
+    .four-images{
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .four-images img{
+        width:40%;
     }
 
 }
 
 @media(max-width:500px){
+    .about-me p{
+        width:80%;
+    
+    }
 
 }
